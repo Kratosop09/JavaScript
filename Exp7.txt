@@ -1,0 +1,34 @@
+
+let arr = [];
+
+let obj1 = {
+name: "Vedant Patil",
+age: 21,
+College: "SCOE",
+RollNo: 51,
+};
+
+arr.push(obj1);
+console.log(arr);
+
+let obj2 = {
+name: "John ghost",
+age: 21,
+College: "SCOE",
+RollNo: 40,
+};
+
+arr.unshift(obj2);
+console.log(arr);
+
+let obj3 = {
+name: "Tony Stark",
+age: 21,
+College: "SCOE",
+RollNo: 61,
+};
+
+arr.push(obj3);
+console.log(arr);
+
+console.log(Array.isArray(arr));

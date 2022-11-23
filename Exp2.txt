@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2 </title>
+</head>
+<body>
+    <h1>Tabel display</h1>
+    <label for="Tabel">Enter any  number </label>
+    <input type="text" id="A"name="Tabel"></input>
+    <br><br><br>
+    <button type="submit" onclick="compute()">Compute</button>
+    <br><br><br>
+
+    <div id="display"></div>
+    <script type="text/javascript">
+
+    function compute(){
+
+        var A = document.getElementById("A").value;
+        var Calculate=[];
+
+        for(let i=1;i<=10;i++){
+            Calculate[i-1]="<br>"+ A + "x" + i + "=" + A*i ; 
+        }
+
+        document.getElementById("display").innerHTML= Calculate;
+
+
+    }
+
+    </script>
+</body>
+</html>

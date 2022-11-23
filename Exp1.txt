@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp1</title>
+</head>
+<body>
+    <h1>Area of Triangle</h1>
+    <label for="length"> Length </label>
+    <input type="number" name="len" id="len">
+    <label for="breadth"> Breadth </label>
+    <input type="number" name="bre" id="bre">
+    <br>
+    <br>
+    <button type="submit" onclick="triarea()" id="areatri">Calulate Area </button>
+    <div><br>
+        <br> 
+        <br>
+        <br>
+    </div>
+    
+    <h1>Area of Rectangle</h1>
+    <label for="length"> Length </label>
+    <input type="number" name="len1" id="len1">
+    <label for="breadth"> Breadth </label>
+    <input type="number" name="bre1" id="bre1">
+    <br>
+    <br>
+    <button type="submit" onclick="Recarea()" id="arearec">Calulate Area </button>
+
+    <div><br>
+        <br> 
+        <br>
+        <br>
+    </div>
+    
+    <h1>Area of Cricle </h1>
+    <label for="Radius"> Radius </label>
+    <input type="number" name="rad" id="rad">
+    
+    <br>
+    <br>
+    <button type="submit" onclick="Cirarea()" id="areacir">Calulate Area </button>
+
+    <script type="text/javascript">
+
+    function triarea() {
+
+   var a =parseFloat( document.getElementById("len").values);
+    
+    var b = parseFloat(document.getElementById("bre").values);
+
+    var area = (0.5 * a * b);
+
+    document.getElementById("areatri").innerHTML = "Area of Tirangle is : " + area ;
+}
+
+function Recarea(){
+    var c =parseFloat( document.getElementById("len1").values);
+    var d = parseFloat(document.getElementById("bre1").values);
+
+    var area1 =  c * d;
+
+    document.getElementById("arearec").innerHTML = "Area of Rectangle is : " + area1 ;
+}
+
+function Cirarea(){
+    var rad =parseFloat( document.getElementById("rad").values);
+    
+
+    var area2 = Math.PI * rad * rad;
+
+    document.getElementById("areacir").innerHTML = "Area of Circle is : " + area2 ;
+}
+    </script>
+</body>
+</html>
